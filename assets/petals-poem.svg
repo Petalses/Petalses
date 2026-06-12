@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg
+                viewBox="0 0 1200 200"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <title id="posterTitle">Petals / 弱水泷江</title>
+                <desc id="posterDesc">
+                    An animated CSS SVG poster where Petals stays in the upper
+                    left while two poem frames fade in sequence.
+                </desc>
+                <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#fff9ee" />
+                        <stop offset="0.42" stop-color="#ffe8d8" />
+                        <stop offset="1" stop-color="#ffdce9" />
+                    </linearGradient>
+                    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+                        <stop
+                            offset="0"
+                            stop-color="#ffe08a"
+                            stop-opacity="0.92"
+                        />
+                        <stop
+                            offset="0.56"
+                            stop-color="#ffc66f"
+                            stop-opacity="0.34"
+                        />
+                        <stop
+                            offset="1"
+                            stop-color="#ffc66f"
+                            stop-opacity="0"
+                        />
+                    </radialGradient>
+                    <linearGradient id="wordFill" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#6a2f2d" />
+                        <stop offset="0.52" stop-color="#c24a5c" />
+                        <stop offset="1" stop-color="#f0904f" />
+                    </linearGradient>
+                    <linearGradient id="petalFill" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#fff4f5" />
+                        <stop offset="0.48" stop-color="#ff94ad" />
+                        <stop offset="1" stop-color="#e65f85" />
+                    </linearGradient>
+                    <linearGradient
+                        id="petalFillGold"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="1"
+                    >
+                        <stop offset="0" stop-color="#fff6c7" />
+                        <stop offset="0.54" stop-color="#ffbf69" />
+                        <stop offset="1" stop-color="#f47b5f" />
+                    </linearGradient>
+                    <filter id="soften">
+                        <feGaussianBlur stdDeviation="10" />
+                    </filter>
+                    <path
+                        id="petal"
+                        d="M0,-26 C18,-20 31,-3 27,13 C23,31 3,34 -8,22 C-21,7 -16,-16 0,-26Z"
+                    />
+                    <path
+                        id="petalSlim"
+                        d="M0,-32 C13,-18 17,1 9,20 C1,39 -17,31 -18,11 C-20,-10 -10,-25 0,-32Z"
+                    />
+                    <path
+                        id="petalRound"
+                        d="M0,-22 C20,-20 31,-9 31,7 C31,25 11,36 -6,27 C-22,18 -18,-14 0,-22Z"
+                    />
+                    <style>
+                        <![CDATA[
+                          .halo {
+                            animation: glow 12s ease-in-out infinite;
+                            transform-origin: 760px 80px;
+                          }
+
+                          .horizon {
+                            animation: breathe 10s ease-in-out infinite;
+                            transform-origin: 600px 170px;
+                          }
+
+                          .brand-word {
+                            font-family: "Brush Script MT", "Edwardian Script ITC", Georgia, "Times New Roman", serif;
+                            font-size: 42px;
+                            font-style: italic;
+                            font-weight: 700;
+                            fill: url(#wordFill);
+                            paint-order: stroke;
+                            stroke: rgba(255,255,255,0.7);
+                            stroke-width: 2.4px;
+                            letter-spacing: 0;
+                          }
+
+                          .brand-tail {
+                            fill: none;
+                            stroke: #c24a5c;
+                            stroke-width: 3.5px;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-dasharray: 88;
+                            animation: tailTrace 5.6s ease-in-out infinite;
+                          }
+
+                          .frame {
+                            font-family: "STXingkai", "华文行楷", "KaiTi", "楷体", "Noto Serif SC", SimSun, serif;
+                            font-weight: 500;
+                            text-anchor: middle;
+                            fill: #5b322f;
+                            paint-order: stroke;
+                            stroke: rgba(255,255,255,0.64);
+                            stroke-width: 3px;
+                            letter-spacing: 0;
+                          }
+
+                          .frame-one {
+                            font-size: 38px;
+                          }
+
+                          .frame-two {
+                            font-size: 34px;
+                          }
+
+                          .frame-line {
+                            opacity: 0;
+                            transform-box: fill-box;
+                            transform-origin: center;
+                          }
+
+                          .line-1 { animation: lineOne 12s ease-in-out infinite; }
+                          .line-2 { animation: lineTwo 12s ease-in-out infinite; }
+                          .line-3 { animation: lineThree 12s ease-in-out infinite; }
+                          .line-4 { animation: lineFour 12s ease-in-out infinite; }
+                          .line-5 { animation: lineFive 12s ease-in-out infinite; }
+                          .line-6 { animation: lineSix 12s ease-in-out infinite; }
+
+                          .summer-mark {
+                            font-family: Georgia, "Times New Roman", serif;
+                            font-size: 22px;
+                            font-style: italic;
+                            font-weight: 700;
+                            text-anchor: end;
+                            fill: rgba(92, 58, 50, 0.24);
+                            paint-order: stroke;
+                            stroke: rgba(255,255,255,0.26);
+                            stroke-width: 1.6px;
+                            letter-spacing: 0;
+                          }
+
+                          .backdrop-slide {
+                            animation: panelSlide 18s linear infinite;
+                          }
+
+                          .panel {
+                            fill: rgba(255,255,255,0.28);
+                            stroke: rgba(194,74,92,0.22);
+                            stroke-width: 1.2px;
+                          }
+
+                          .panel-text {
+                            font-family: "STXingkai", "华文行楷", "KaiTi", "楷体", serif;
+                            font-size: 31px;
+                            font-weight: 500;
+                            fill: rgba(106,47,45,0.24);
+                            text-anchor: middle;
+                            letter-spacing: 0;
+                          }
+
+                          .panel-line {
+                            fill: none;
+                            stroke: rgba(240,144,79,0.24);
+                            stroke-width: 2px;
+                            stroke-linecap: round;
+                          }
+
+                          .petal {
+                            transform-box: fill-box;
+                            transform-origin: center;
+                            opacity: 0;
+                            animation-name: fall;
+                            animation-timing-function: cubic-bezier(.36,.05,.58,.95);
+                            animation-iteration-count: infinite;
+                            filter: drop-shadow(0 10px 8px rgba(166, 76, 82, 0.16));
+                          }
+
+                          .p01 { animation-duration: 7.4s; animation-delay: -0.7s; --sx: 108px; --sy: -88px; --mx: 147px; --ex: 82px; --ey: 228px; --r0: -16deg; --r1: 276deg; }
+                          .p02 { animation-duration: 8.8s; animation-delay: -5.2s; --sx: 236px; --sy: -72px; --mx: 259px; --ex: 178px; --ey: 224px; --r0: 28deg; --r1: -310deg; }
+                          .p03 { animation-duration: 9.6s; animation-delay: -1.8s; --sx: 352px; --sy: -94px; --mx: 440px; --ex: 424px; --ey: 234px; --r0: 14deg; --r1: 348deg; }
+                          .p04 { animation-duration: 7.9s; animation-delay: -3.1s; --sx: 512px; --sy: -68px; --mx: 546px; --ex: 476px; --ey: 222px; --r0: 54deg; --r1: -252deg; }
+                          .p05 { animation-duration: 10.2s; animation-delay: -6.3s; --sx: 676px; --sy: -108px; --mx: 700px; --ex: 620px; --ey: 238px; --r0: -36deg; --r1: 294deg; }
+                          .p06 { animation-duration: 8.6s; animation-delay: -2.6s; --sx: 798px; --sy: -76px; --mx: 885px; --ex: 868px; --ey: 230px; --r0: 22deg; --r1: -330deg; }
+                          .p07 { animation-duration: 9.1s; animation-delay: -4.5s; --sx: 948px; --sy: -98px; --mx: 981px; --ex: 910px; --ey: 234px; --r0: -12deg; --r1: 266deg; }
+                          .p08 { animation-duration: 7.2s; animation-delay: -1.1s; --sx: 1088px; --sy: -74px; --mx: 1103px; --ex: 1014px; --ey: 224px; --r0: 42deg; --r1: -276deg; }
+                          .p09 { animation-duration: 11.2s; animation-delay: -7.2s; --sx: 44px; --sy: -116px; --mx: 168px; --ex: 188px; --ey: 240px; --r0: -28deg; --r1: 390deg; }
+                          .p10 { animation-duration: 9.8s; animation-delay: -0.2s; --sx: 1114px; --sy: -112px; --mx: 1105px; --ex: 992px; --ey: 236px; --r0: 18deg; --r1: -342deg; }
+                          .p11 { animation-duration: 8.4s; animation-delay: -4.1s; --sx: 438px; --sy: -118px; --mx: 528px; --ex: 514px; --ey: 242px; --r0: -48deg; --r1: 288deg; }
+                          .p12 { animation-duration: 10.6s; animation-delay: -6.7s; --sx: 742px; --sy: -126px; --mx: 775px; --ex: 704px; --ey: 240px; --r0: 36deg; --r1: -384deg; }
+                          .p13 { animation-duration: 8.1s; animation-delay: -2.8s; --sx: 154px; --sy: -136px; --mx: 262px; --ex: 306px; --ey: 232px; --r0: -38deg; --r1: 330deg; }
+                          .p14 { animation-duration: 9.3s; animation-delay: -6.1s; --sx: 286px; --sy: -126px; --mx: 214px; --ex: 112px; --ey: 236px; --r0: 18deg; --r1: -300deg; }
+                          .p15 { animation-duration: 7.6s; animation-delay: -3.8s; --sx: 612px; --sy: -118px; --mx: 656px; --ex: 742px; --ey: 226px; --r0: 52deg; --r1: 392deg; }
+                          .p16 { animation-duration: 10.8s; animation-delay: -8.2s; --sx: 882px; --sy: -132px; --mx: 822px; --ex: 784px; --ey: 242px; --r0: -22deg; --r1: -362deg; }
+                          .p17 { animation-duration: 8.9s; animation-delay: -1.4s; --sx: 1032px; --sy: -122px; --mx: 1124px; --ex: 1140px; --ey: 234px; --r0: 36deg; --r1: 316deg; }
+                          .p18 { animation-duration: 11.4s; animation-delay: -5.7s; --sx: 72px; --sy: -146px; --mx: 96px; --ex: 28px; --ey: 238px; --r0: -8deg; --r1: -288deg; }
+                          .p19 { animation-duration: 7.9s; animation-delay: -4.9s; --sx: 522px; --sy: -142px; --mx: 460px; --ex: 410px; --ey: 234px; --r0: 44deg; --r1: -316deg; }
+                          .p20 { animation-duration: 10.1s; animation-delay: -0.9s; --sx: 706px; --sy: -152px; --mx: 806px; --ex: 846px; --ey: 240px; --r0: -34deg; --r1: 374deg; }
+                          .p21 { animation-duration: 8.2s; animation-delay: -7.1s; --sx: 1164px; --sy: -120px; --mx: 1048px; --ex: 934px; --ey: 228px; --r0: 12deg; --r1: -276deg; }
+                          .p22 { animation-duration: 9.7s; animation-delay: -3.2s; --sx: 378px; --sy: -150px; --mx: 340px; --ex: 252px; --ey: 244px; --r0: -48deg; --r1: 360deg; }
+
+                          @keyframes fall {
+                            0% {
+                              opacity: 0;
+                              transform: translate(var(--sx), var(--sy)) rotate(var(--r0)) scale(0.58);
+                            }
+
+                            12% {
+                              opacity: 0.92;
+                            }
+
+                            42% {
+                              transform: translate(var(--mx), 92px) rotate(142deg) scale(0.86);
+                            }
+
+                            76% {
+                              opacity: 0.88;
+                            }
+
+                            100% {
+                              opacity: 0;
+                              transform: translate(var(--ex), var(--ey)) rotate(var(--r1)) scale(0.66);
+                            }
+                          }
+
+                          @keyframes tailTrace {
+                            0%, 100% {
+                              stroke-dashoffset: 0;
+                              opacity: 0.72;
+                            }
+
+                            48% {
+                              stroke-dashoffset: 88;
+                              opacity: 1;
+                            }
+                          }
+
+                          @keyframes lineOne {
+                            0%, 45% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            54%, 100% { opacity: 0; transform: translateY(-12px); filter: blur(10px); }
+                          }
+
+                          @keyframes lineTwo {
+                            0%, 8% { opacity: 0; transform: translateY(14px); filter: blur(10px); }
+                            18%, 45% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            54%, 100% { opacity: 0; transform: translateY(-12px); filter: blur(10px); }
+                          }
+
+                          @keyframes lineThree {
+                            0%, 15% { opacity: 0; transform: translateY(14px); filter: blur(10px); }
+                            24%, 45% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            54%, 100% { opacity: 0; transform: translateY(-12px); filter: blur(10px); }
+                          }
+
+                          @keyframes lineFour {
+                            0%, 22% { opacity: 0; transform: translateY(14px); filter: blur(10px); }
+                            30%, 45% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            54%, 100% { opacity: 0; transform: translateY(-12px); filter: blur(10px); }
+                          }
+
+                          @keyframes lineFive {
+                            0%, 56% { opacity: 0; transform: translateY(22px); filter: blur(13px); }
+                            64%, 88% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            100% { opacity: 0; transform: translateY(-20px); filter: blur(12px); }
+                          }
+
+                          @keyframes lineSix {
+                            0%, 62% { opacity: 0; transform: translateY(22px); filter: blur(13px); }
+                            70%, 88% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                            100% { opacity: 0; transform: translateY(-20px); filter: blur(12px); }
+                          }
+
+                          @keyframes glow {
+                            0%, 100% {
+                              transform: scale(0.96);
+                              opacity: 0.62;
+                            }
+
+                            50% {
+                              transform: scale(1.08);
+                              opacity: 0.94;
+                            }
+                          }
+
+                          @keyframes panelSlide {
+                            0% {
+                              transform: translateX(0);
+                            }
+
+                            100% {
+                              transform: translateX(-360px);
+                            }
+                          }
+
+                          @keyframes breathe {
+                            0%, 100% {
+                              transform: scaleX(1) translateY(0);
+                              opacity: 0.78;
+                            }
+
+                            50% {
+                              transform: scaleX(1.03) translateY(-8px);
+                              opacity: 0.96;
+                            }
+                          }
+
+                          @media (prefers-reduced-motion: reduce) {
+                            .halo, .horizon, .backdrop-slide, .brand-tail, .frame-line, .petal {
+                              animation: none;
+                            }
+
+                            .petal {
+                              opacity: 0.7;
+                            }
+
+                            .line-1,
+                            .line-2,
+                            .line-3,
+                            .line-4 {
+                              opacity: 1;
+                            }
+
+                            .line-5,
+                            .line-6 {
+                              opacity: 0;
+                            }
+                          }
+                        ]]>
+                    </style>
+                </defs>
+
+                <rect width="1200" height="200" rx="28" fill="url(#sky)" />
+                <circle class="halo" cx="760" cy="74" r="96" fill="url(#sun)" />
+                <circle
+                    cx="222"
+                    cy="54"
+                    r="54"
+                    fill="#ffffff"
+                    opacity="0.22"
+                    filter="url(#soften)"
+                />
+                <circle
+                    cx="985"
+                    cy="52"
+                    r="48"
+                    fill="#ffffff"
+                    opacity="0.16"
+                    filter="url(#soften)"
+                />
+
+                <g class="backdrop-slide">
+                    <g transform="translate(-300 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="34"
+                            width="260"
+                            height="118"
+                            rx="18"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M28 74 C82 42 142 128 226 74"
+                        />
+                        <circle
+                            cx="58"
+                            cy="58"
+                            r="10"
+                            fill="#f0904f"
+                            opacity="0.18"
+                        />
+                        <text class="panel-text" x="130" y="104">Petals</text>
+                    </g>
+                    <g transform="translate(60 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="24"
+                            width="250"
+                            height="104"
+                            rx="16"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M32 58 C90 26 158 104 216 52"
+                        />
+                        <circle
+                            cx="202"
+                            cy="92"
+                            r="13"
+                            fill="#c24a5c"
+                            opacity="0.14"
+                        />
+                        <text class="panel-text" x="125" y="86">弱水</text>
+                    </g>
+                    <g transform="translate(420 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="48"
+                            width="270"
+                            height="112"
+                            rx="18"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M30 98 C96 56 168 146 238 88"
+                        />
+                        <circle
+                            cx="54"
+                            cy="126"
+                            r="12"
+                            fill="#e65f85"
+                            opacity="0.13"
+                        />
+                        <text class="panel-text" x="135" y="116">泷江</text>
+                    </g>
+                    <g transform="translate(780 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="28"
+                            width="260"
+                            height="116"
+                            rx="18"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M28 88 C86 40 160 118 226 66"
+                        />
+                        <circle
+                            cx="216"
+                            cy="54"
+                            r="11"
+                            fill="#ffbf69"
+                            opacity="0.18"
+                        />
+                        <text class="panel-text" x="130" y="100">Petals</text>
+                    </g>
+                    <g transform="translate(1140 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="36"
+                            width="260"
+                            height="108"
+                            rx="16"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M28 78 C94 44 154 122 226 72"
+                        />
+                        <circle
+                            cx="60"
+                            cy="58"
+                            r="10"
+                            fill="#c24a5c"
+                            opacity="0.14"
+                        />
+                        <text class="panel-text" x="130" y="98">Petals</text>
+                    </g>
+                    <g transform="translate(1500 0)">
+                        <rect
+                            class="panel"
+                            x="0"
+                            y="24"
+                            width="250"
+                            height="104"
+                            rx="16"
+                        />
+                        <path
+                            class="panel-line"
+                            d="M32 58 C90 26 158 104 216 52"
+                        />
+                        <circle
+                            cx="202"
+                            cy="92"
+                            r="13"
+                            fill="#c24a5c"
+                            opacity="0.14"
+                        />
+                        <text class="panel-text" x="125" y="86">弱水</text>
+                    </g>
+                </g>
+
+                <g class="horizon">
+                    <path
+                        d="M0 142 C132 124 255 133 367 144 C506 160 598 140 724 126 C871 112 1001 125 1200 106 L1200 200 L0 200Z"
+                        fill="#f5a38d"
+                        opacity="0.22"
+                    />
+                    <path
+                        d="M0 162 C165 150 250 156 398 170 C520 184 637 169 754 156 C912 139 1040 150 1200 136 L1200 200 L0 200Z"
+                        fill="#f7be80"
+                        opacity="0.24"
+                    />
+                    <path
+                        d="M0 184 C183 174 340 186 516 188 C700 190 845 174 1010 180 C1088 184 1148 190 1200 196 L1200 200 L0 200Z"
+                        fill="#ffffff"
+                        opacity="0.36"
+                    />
+                </g>
+
+                <text class="summer-mark" x="1086" y="178">
+                    500 Days of Summer
+                </text>
+
+                <g>
+                    <use
+                        class="petal p01"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p02"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p03"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                        transform="scale(0.82)"
+                    />
+                    <use
+                        class="petal p04"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p05"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p06"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                        transform="scale(0.75)"
+                    />
+                    <use
+                        class="petal p07"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p08"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p09"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                        transform="scale(0.7)"
+                    />
+                    <use
+                        class="petal p10"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p11"
+                        href="#petal"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p12"
+                        href="#petal"
+                        fill="url(#petalFillGold)"
+                        transform="scale(0.86)"
+                    />
+                    <use
+                        class="petal p13"
+                        href="#petalSlim"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p14"
+                        href="#petalRound"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p15"
+                        href="#petalSlim"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p16"
+                        href="#petalRound"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p17"
+                        href="#petalSlim"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p18"
+                        href="#petalRound"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p19"
+                        href="#petalSlim"
+                        fill="url(#petalFill)"
+                    />
+                    <use
+                        class="petal p20"
+                        href="#petalRound"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p21"
+                        href="#petalSlim"
+                        fill="url(#petalFillGold)"
+                    />
+                    <use
+                        class="petal p22"
+                        href="#petalRound"
+                        fill="url(#petalFill)"
+                    />
+                </g>
+
+                <g transform="translate(600 100)">
+                    <g class="frame frame-one">
+                        <text class="frame-line line-1" x="0" y="-54">
+                            难渡弱水
+                        </text>
+                        <text class="frame-line line-2" x="0" y="-18">
+                            滞途泷江
+                        </text>
+                        <text class="frame-line line-3" x="0" y="18">
+                            她过江
+                        </text>
+                        <text class="frame-line line-4" x="0" y="54">
+                            我也过江
+                        </text>
+                    </g>
+                    <g class="frame frame-two">
+                        <text class="frame-line line-5" x="-210" y="-22">
+                            你爱的人永远死去
+                        </text>
+                        <text class="frame-line line-6" x="210" y="42">
+                            夕阳仍一直堆满大海
+                        </text>
+                    </g>
+                </g>
+
+                <g transform="translate(64 58)">
+                    <text
+                        class="brand-word"
+                        x="0"
+                        y="0"
+                        transform="scale(0.72 1)"
+                    >
+                        Petals
+                    </text>
+                    <path
+                        class="brand-tail"
+                        d="M98 -10 C126 -6 123 19 94 19 C79 19 76 10 88 8"
+                    />
+                </g>
+            </svg>

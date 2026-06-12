@@ -2,9 +2,11 @@
 
 <img src="./assets/profile-cover.png" alt="Profile cover" width="100%" />
 
-# Petalses
+# Petals
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=900&color=C24A5C&center=true&vCenter=true&width=640&lines=Python+%2F+Automation+%2F+Creative+Coding;Building+small+tools+that+actually+work;Petals+fall%2C+systems+run." alt="Typing intro" />
+
+<img src="./assets/petals-poem.svg" alt="Petals animated poem" width="100%" />
 
 </div>
 
@@ -34,9 +36,9 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Petalses&show_icons=true&hide_border=true&title_color=C24A5C&icon_color=F0904F&text_color=5B322F&bg_color=FFF9EF" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Petals&show_icons=true&hide_border=true&title_color=C24A5C&icon_color=F0904F&text_color=5B322F&bg_color=FFF9EF" alt="GitHub stats" />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&layout=compact&hide_border=true&title_color=C24A5C&text_color=5B322F&bg_color=FFF9EF" alt="Top languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Petals&layout=compact&hide_border=true&title_color=C24A5C&text_color=5B322F&bg_color=FFF9EF" alt="Top languages" />
 
 </div>
 
