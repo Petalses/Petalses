@@ -1,0 +1,31 @@
+<svg width="1200" height="96" viewBox="0 0 1200 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff7d6" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#c24a5c"/>
+      <stop offset=".5" stop-color="#f0904f"/>
+      <stop offset=".78" stop-color="#5d215f"/>
+      <stop offset="1" stop-color="#fff7d6" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      <![CDATA[
+        .wave { animation: move 8s linear infinite; }
+        .dot { animation: pulse 2.8s ease-in-out infinite; }
+        .d2 { animation-delay: .5s; }
+        .d3 { animation-delay: 1s; }
+        @keyframes move {
+          from { stroke-dashoffset: 0; }
+          to { stroke-dashoffset: -240; }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: .28; transform: scale(.8); }
+          50% { opacity: .9; transform: scale(1.12); }
+        }
+      ]]>
+    </style>
+  </defs>
+  <path class="wave" d="M0 48 C160 8 240 88 400 48 C560 8 640 88 800 48 C960 8 1040 88 1200 48" stroke="url(#line)" stroke-width="5" stroke-linecap="round" stroke-dasharray="80 36"/>
+  <circle class="dot" cx="270" cy="48" r="7" fill="#c24a5c"/>
+  <circle class="dot d2" cx="600" cy="48" r="9" fill="#f0904f"/>
+  <circle class="dot d3" cx="930" cy="48" r="7" fill="#5d215f"/>
+</svg>

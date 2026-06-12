@@ -1,0 +1,103 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff7d6"/>
+      <stop offset="0.38" stop-color="#ffdce9"/>
+      <stop offset="0.72" stop-color="#d9f3ff"/>
+      <stop offset="1" stop-color="#fff1bd"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(854 108) rotate(90) scale(190)">
+      <stop stop-color="#fff7a8" stop-opacity="0.95"/>
+      <stop offset="0.52" stop-color="#ffb36b" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ffb36b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="356" y1="86" x2="842" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5d215f"/>
+      <stop offset="0.45" stop-color="#c24a5c"/>
+      <stop offset="1" stop-color="#f0904f"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-50%" width="140%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#8f4b5b" flood-opacity="0.24"/>
+    </filter>
+    <path id="petal" d="M0,-18 C14,-14 22,-2 18,11 C14,24 -2,25 -10,16 C-19,5 -13,-12 0,-18Z"/>
+    <style>
+      <![CDATA[
+        .sparkle { animation: twinkle 3.6s ease-in-out infinite; transform-origin: center; }
+        .s2 { animation-delay: .6s; }
+        .s3 { animation-delay: 1.2s; }
+        .s4 { animation-delay: 1.8s; }
+        .flow { animation: drift 18s linear infinite; }
+        .petal { opacity: 0; animation: fall 8s ease-in-out infinite; transform-origin: center; }
+        .p1 { animation-delay: -1s; --sx: 120px; --sy: -24px; --ex: 180px; --ey: 340px; --r: 280deg; }
+        .p2 { animation-delay: -3s; --sx: 360px; --sy: -44px; --ex: 300px; --ey: 330px; --r: -320deg; }
+        .p3 { animation-delay: -5s; --sx: 730px; --sy: -34px; --ex: 760px; --ey: 338px; --r: 360deg; }
+        .p4 { animation-delay: -6.5s; --sx: 1040px; --sy: -42px; --ex: 980px; --ey: 334px; --r: -260deg; }
+        @keyframes drift {
+          from { transform: translateX(0); }
+          to { transform: translateX(-360px); }
+        }
+        @keyframes twinkle {
+          0%, 100% { opacity: .25; transform: scale(.72) rotate(0deg); }
+          50% { opacity: 1; transform: scale(1.18) rotate(18deg); }
+        }
+        @keyframes fall {
+          0% { opacity: 0; transform: translate(var(--sx), var(--sy)) rotate(0deg) scale(.62); }
+          18% { opacity: .9; }
+          62% { opacity: .8; }
+          100% { opacity: 0; transform: translate(var(--ex), var(--ey)) rotate(var(--r)) scale(.76); }
+        }
+      ]]>
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <circle cx="854" cy="108" r="190" fill="url(#sun)"/>
+  <ellipse cx="210" cy="78" rx="165" ry="46" fill="#fff" opacity=".32" filter="url(#soft)"/>
+  <ellipse cx="1030" cy="84" rx="132" ry="38" fill="#fff" opacity=".28" filter="url(#soft)"/>
+
+  <g class="flow" opacity=".72">
+    <path d="M-20 252 C130 202 262 278 412 232 C548 190 636 222 760 252 C916 290 1036 210 1230 238" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".28"/>
+    <path d="M-20 284 C118 240 282 286 418 266 C560 244 686 266 810 286 C964 310 1052 262 1230 272" stroke="#c24a5c" stroke-width="3" stroke-linecap="round" opacity=".18"/>
+    <circle cx="120" cy="226" r="10" fill="#fff" opacity=".72"/>
+    <circle cx="468" cy="246" r="7" fill="#f0904f" opacity=".48"/>
+    <circle cx="850" cy="234" r="9" fill="#c24a5c" opacity=".36"/>
+    <circle cx="1110" cy="260" r="6" fill="#fff" opacity=".76"/>
+    <path d="M340 224 C396 184 470 268 552 218" stroke="#f0904f" stroke-width="5" stroke-linecap="round" opacity=".24"/>
+    <path d="M700 258 C780 198 866 294 970 226" stroke="#5d215f" stroke-width="5" stroke-linecap="round" opacity=".18"/>
+  </g>
+  <g class="flow" transform="translate(360 0)" opacity=".72">
+    <path d="M-20 252 C130 202 262 278 412 232 C548 190 636 222 760 252 C916 290 1036 210 1230 238" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".28"/>
+    <path d="M-20 284 C118 240 282 286 418 266 C560 244 686 266 810 286 C964 310 1052 262 1230 272" stroke="#c24a5c" stroke-width="3" stroke-linecap="round" opacity=".18"/>
+    <circle cx="120" cy="226" r="10" fill="#fff" opacity=".72"/>
+    <circle cx="468" cy="246" r="7" fill="#f0904f" opacity=".48"/>
+    <circle cx="850" cy="234" r="9" fill="#c24a5c" opacity=".36"/>
+    <circle cx="1110" cy="260" r="6" fill="#fff" opacity=".76"/>
+  </g>
+
+  <g>
+    <use class="petal p1" href="#petal" fill="#ff94ad"/>
+    <use class="petal p2" href="#petal" fill="#ffbf69"/>
+    <use class="petal p3" href="#petal" fill="#e65f85"/>
+    <use class="petal p4" href="#petal" fill="#fff4f5"/>
+  </g>
+
+  <g class="sparkle" fill="#fff">
+    <path d="M154 102 L162 119 L180 126 L162 133 L154 151 L146 133 L128 126 L146 119Z"/>
+  </g>
+  <g class="sparkle s2" fill="#fff7a8">
+    <path d="M1018 134 L1025 148 L1040 154 L1025 160 L1018 176 L1011 160 L996 154 L1011 148Z"/>
+  </g>
+  <g class="sparkle s3" fill="#ffffff">
+    <path d="M292 206 L297 216 L308 221 L297 226 L292 237 L287 226 L276 221 L287 216Z"/>
+  </g>
+  <g class="sparkle s4" fill="#ffe6ed">
+    <path d="M904 62 L910 74 L924 79 L910 84 L904 98 L898 84 L884 79 L898 74Z"/>
+  </g>
+
+  <text x="600" y="136" text-anchor="middle" font-family="Edwardian Script ITC, Palace Script MT, Brush Script MT, Georgia, serif" font-size="112" fill="url(#title)" filter="url(#shadow)">Petals</text>
+  <text x="600" y="186" text-anchor="middle" font-family="Georgia, Palatino Linotype, serif" font-size="22" fill="#5b322f" opacity=".72">Python / Automation / Creative Coding</text>
+  <text x="600" y="226" text-anchor="middle" font-family="STXingkai, KaiTi, serif" font-size="30" fill="#6a2f2d" opacity=".56">难渡弱水，滞途泷江。她过江，我也过江。</text>
+</svg>

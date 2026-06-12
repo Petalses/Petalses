@@ -1,16 +1,18 @@
 <div align="center">
 
-<img src="./assets/profile-cover.png" alt="Profile cover" width="100%" />
+<img src="./assets/profile-magic.svg" alt="Petals animated profile banner" width="100%" />
 
-# Petals
+<img src="./assets/profile-cover.png" alt="Profile cover" width="88%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=900&color=C24A5C&center=true&vCenter=true&width=640&lines=Python+%2F+Automation+%2F+Creative+Coding;Building+small+tools+that+actually+work;Petals+fall%2C+systems+run." alt="Typing intro" />
+<br />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=900&color=C24A5C&center=true&vCenter=true&width=680&lines=Python+%2F+Automation+%2F+Creative+Coding;Building+small+tools+that+actually+work;Petals+fall%2C+systems+run." alt="Typing intro" />
 
 <img src="./assets/petals-poem.svg" alt="Petals animated poem" width="100%" />
 
 </div>
 
----
+<img src="./assets/divider-flow.svg" alt="Animated divider" width="100%" />
 
 ## Visual Notes
 
@@ -20,7 +22,7 @@
 
 </div>
 
----
+<img src="./assets/divider-flow.svg" alt="Animated divider" width="100%" />
 
 ## Tech Stack
 
@@ -30,7 +32,7 @@
 
 </div>
 
----
+<img src="./assets/divider-flow.svg" alt="Animated divider" width="100%" />
 
 ## GitHub Stats
 
@@ -42,7 +44,7 @@
 
 </div>
 
----
+<img src="./assets/divider-flow.svg" alt="Animated divider" width="100%" />
 
 ## Projects I Like To Build
 
@@ -52,8 +54,6 @@
 | Web | small pages, animated SVG/CSS, simple dashboards |
 | Data | cleaning, parsing, Excel/CSV processing |
 | AI Tools | prompts, model wrappers, local productivity tools |
-
----
 
 <div align="center">
 
