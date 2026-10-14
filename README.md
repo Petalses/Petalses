@@ -22,7 +22,7 @@
 
 <br>
 
-<h3 align="center">栈</h3>
+<h3 align="center"></h3>
 
 <div align="center">
 <img src="./assets/stack.png" width="600" alt="Python · HTML · CSS · JavaScript · VS Code · Git · GitHub · PyCharm">
@@ -30,7 +30,7 @@
 
 <br>
 
-<h3 align="center">做 什 么</h3>
+<h3 align="center"></h3>
 
 <div align="center">
 
