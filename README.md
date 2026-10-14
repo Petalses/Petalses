@@ -17,20 +17,6 @@
 
 <br>
 
-<h3 align="center">关 于</h3>
-
-<div align="center">
-
-Python 打底，自动化为主，偶尔写点好看的东西。<br>
-偏爱那种小、安静、但真的跑得起来的工具 ——<br>
-能替人省下十分钟的事，就值得写成脚本。<br>
-<br>
-不太爱炫技，比较爱收尾。
-
-</div>
-
-<br>
-
 <div align="center">
 <img src="./assets/portrait.jpg" width="56%" alt="Petals">
 </div>
