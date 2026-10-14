@@ -1,7 +1,7 @@
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-night.jpg">
-  <img src="./assets/hero-day.jpg" width="100%" alt="Petals — 花瓣落下，系统运行">
+  <img src="./assets/hero-day.jpg" width="100%" alt="Petals">
 </picture>
 </div>
 
@@ -46,8 +46,8 @@ Python 打底，自动化为主，偶尔写点好看的东西。<br>
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&theme=dark">
-  <img src="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&theme=light" alt="Python · HTML · CSS · JS · Git · GitHub · VS Code · PyCharm">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&amp;theme=dark">
+  <img src="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&amp;theme=light" alt="stack">
 </picture>
 
 </div>
@@ -67,17 +67,17 @@ Python 打底，自动化为主，偶尔写点好看的东西。<br>
 
 <br>
 
-<h3 align="center">战 绩</h3>
+<h3 align="center">数 据</h3>
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Petalses&show_icons=true&hide_border=true&hide_title=true&include_all_commits=true&bg_color=0C0908&title_color=DBA84A&text_color=D8CBB4&icon_color=C9503A&card_width=460">
-  <img src="https://github-readme-stats.vercel.app/api?username=Petalses&show_icons=true&hide_border=true&hide_title=true&include_all_commits=true&bg_color=FAF6EE&title_color=A83A2C&text_color=3A302B&icon_color=A83A2C&card_width=460" width="440" alt="GitHub 数据">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Petalses&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;bg_color=0C0908&amp;title_color=DBA84A&amp;text_color=D8CBB4&amp;icon_color=C9503A&amp;card_width=460">
+  <img src="https://github-readme-stats.vercel.app/api?username=Petalses&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;bg_color=FAF6EE&amp;title_color=A83A2C&amp;text_color=3A302B&amp;icon_color=A83A2C&amp;card_width=460" width="440" alt="stats">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&layout=compact&langs_count=8&hide_border=true&hide_title=true&bg_color=0C0908&title_color=DBA84A&text_color=D8CBB4&card_width=340">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&layout=compact&langs_count=8&hide_border=true&hide_title=true&bg_color=FAF6EE&title_color=A83A2C&text_color=3A302B&card_width=340" width="326" alt="常用语言">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;hide_title=true&amp;bg_color=0C0908&amp;title_color=DBA84A&amp;text_color=D8CBB4&amp;card_width=340">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;hide_title=true&amp;bg_color=FAF6EE&amp;title_color=A83A2C&amp;text_color=3A302B&amp;card_width=340" width="326" alt="langs">
 </picture>
 
 </div>

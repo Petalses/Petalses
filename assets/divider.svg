@@ -12,14 +12,12 @@
 
   <rect x="0" y="30.6" width="1200" height="2.2" fill="url(#ln)"/>
 
-  <!-- the cross-shaped scar -->
   <g stroke="#c9503a" stroke-width="2.6" stroke-linecap="round" opacity="1">
     <animate attributeName="opacity" values="0.62;1;0.62" dur="5.5s" repeatCount="indefinite"/>
     <line x1="589" y1="23.5" x2="611" y2="40.5"/>
     <line x1="611" y1="23.5" x2="589" y2="40.5"/>
   </g>
 
-  <!-- petals, falling across -->
   <g>
     <g>
       <animateMotion dur="21s" repeatCount="indefinite" path="M90,20 C380,4 760,46 1130,24"/>
