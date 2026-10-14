@@ -8,44 +8,38 @@
 <br>
 
 <div align="center">
-<i>难渡弱水，滞途泷江。她过江，我也过江。</i>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/poem-night.png">
+  <img src="./assets/poem-day.png" width="100%" alt="难渡弱水，滞途泷江。她过江，我也过江。">
+</picture>
 </div>
-
-<br>
-
-<div align="center"><img src="./assets/divider.svg" width="100%" alt=""></div>
 
 <br>
 
 <div align="center">
-<img src="./assets/portrait.jpg" width="56%" alt="Petals">
+<img src="./assets/portrait.jpg" width="44%" alt="Petals">
 </div>
-
-<br>
-
-<div align="center"><img src="./assets/divider.svg" width="100%" alt=""></div>
 
 <br>
 
 <h3 align="center">栈</h3>
 
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Chtml%2Ccss%2Cjs%2Cgit%2Cgithub%2Cvscode%2Cpycharm&amp;theme=dark">
-  <img src="https://skillicons.dev/icons?i=python%2Chtml%2Ccss%2Cjs%2Cgit%2Cgithub%2Cvscode%2Cpycharm&amp;theme=light" alt="stack">
-</picture>
-
+<img src="./assets/stack.png" width="600" alt="Python · HTML · CSS · JavaScript · VS Code · Git · GitHub · PyCharm">
 </div>
+
+<br>
 
 <h3 align="center">做 什 么</h3>
 
-| 类别 | 做什么 |
-| --- | --- |
-| 自动化 | 浏览器脚本、工作流助手、批处理小工具 |
-| 网页 | 小页面、动效 SVG / CSS、简单看板 |
-| 数据 | 清洗、解析、Excel / CSV 处理 |
-| AI 工具 | 提示词、模型封装、本地效率工具 |
+<div align="center">
+
+<b>自动化</b> &nbsp;—&nbsp; 浏览器脚本、工作流助手、批处理小工具<br>
+<b>网页</b> &nbsp;—&nbsp; 小页面、动效 SVG / CSS、简单看板<br>
+<b>数据</b> &nbsp;—&nbsp; 清洗、解析、Excel / CSV 处理<br>
+<b>AI 工具</b> &nbsp;—&nbsp; 提示词、模型封装、本地效率工具
+
+</div>
 
 <br>
 
@@ -56,17 +50,13 @@
 <h3 align="center">数 据</h3>
 
 <div align="center">
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-night.jpg">
   <img src="./assets/stats-day.jpg" width="100%" alt="数据">
 </picture>
-
 </div>
 
 <br>
-
-<div align="center"><img src="./assets/divider.svg" width="100%" alt=""></div>
 
 <br>
 
