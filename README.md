@@ -58,12 +58,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Petalses&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;bg_color=0C0908&amp;title_color=DBA84A&amp;text_color=D8CBB4&amp;icon_color=C9503A&amp;card_width=460">
-  <img src="https://github-readme-stats.vercel.app/api?username=Petalses&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;bg_color=FAF6EE&amp;title_color=A83A2C&amp;text_color=3A302B&amp;icon_color=A83A2C&amp;card_width=460" width="440" alt="stats">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;hide_title=true&amp;bg_color=0C0908&amp;title_color=DBA84A&amp;text_color=D8CBB4&amp;card_width=340">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Petalses&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;hide_title=true&amp;bg_color=FAF6EE&amp;title_color=A83A2C&amp;text_color=3A302B&amp;card_width=340" width="326" alt="langs">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-night.jpg">
+  <img src="./assets/stats-day.jpg" width="100%" alt="数据">
 </picture>
 
 </div>
@@ -75,10 +71,9 @@
 <br>
 
 <div align="center">
-<img src="./assets/medallion.png" width="104" alt="">
-<br>
+<img src="./assets/medallion.png" width="104" alt="">&nbsp;&nbsp;&nbsp;<img src="./assets/companion.png" width="104" alt="">
+<br><br>
 <sub>你爱的人永远死去，夕阳仍一直堆满大海。</sub>
-<br>
-<br>
+<br><br>
 <sub><a href="https://github.com/Petalses">github.com/Petalses</a></sub>
 </div>
