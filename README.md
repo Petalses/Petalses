@@ -32,8 +32,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&amp;theme=dark">
-  <img src="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode,pycharm&amp;theme=light" alt="stack">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Chtml%2Ccss%2Cjs%2Cgit%2Cgithub%2Cvscode%2Cpycharm&amp;theme=dark">
+  <img src="https://skillicons.dev/icons?i=python%2Chtml%2Ccss%2Cjs%2Cgit%2Cgithub%2Cvscode%2Cpycharm&amp;theme=light" alt="stack">
 </picture>
 
 </div>
