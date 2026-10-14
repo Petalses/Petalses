@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 64" width="1200" height="64" fill="none" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="ln" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9503a" stop-opacity="0"/>
+      <stop offset=".30" stop-color="#c9503a" stop-opacity="1"/>
+      <stop offset=".455" stop-color="#c9503a" stop-opacity="0"/>
+      <stop offset=".545" stop-color="#c9503a" stop-opacity="0"/>
+      <stop offset=".70" stop-color="#c9503a" stop-opacity="1"/>
+      <stop offset="1" stop-color="#c9503a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="30.6" width="1200" height="2.2" fill="url(#ln)"/>
+
+  <!-- the cross-shaped scar -->
+  <g stroke="#c9503a" stroke-width="2.6" stroke-linecap="round" opacity="1">
+    <animate attributeName="opacity" values="0.62;1;0.62" dur="5.5s" repeatCount="indefinite"/>
+    <line x1="589" y1="23.5" x2="611" y2="40.5"/>
+    <line x1="611" y1="23.5" x2="589" y2="40.5"/>
+  </g>
+
+  <!-- petals, falling across -->
+  <g>
+    <g>
+      <animateMotion dur="21s" repeatCount="indefinite" path="M90,20 C380,4 760,46 1130,24"/>
+      <animate attributeName="opacity" values="0;.55;.55;0" keyTimes="0;.16;.84;1" dur="21s" repeatCount="indefinite"/>
+      <ellipse rx="4.6" ry="2.6" fill="#c24a5c" transform="rotate(-30)"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <animateMotion dur="29s" repeatCount="indefinite" path="M140,44 C460,26 720,8 1100,42"/>
+      <animate attributeName="opacity" values="0;.38;.38;0" keyTimes="0;.18;.82;1" dur="29s" repeatCount="indefinite"/>
+      <ellipse rx="3.4" ry="2" fill="#d98a6a" transform="rotate(18)"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <animateMotion dur="37s" repeatCount="indefinite" path="M60,30 C400,44 820,10 1160,32"/>
+      <animate attributeName="opacity" values="0;.3;.3;0" keyTimes="0;.2;.8;1" dur="37s" repeatCount="indefinite"/>
+      <ellipse rx="3" ry="1.8" fill="#c9503a" transform="rotate(-14)"/>
+    </g>
+  </g>
+</svg>
